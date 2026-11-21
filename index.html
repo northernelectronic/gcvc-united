@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#111114" />
+<title>GCVC United</title>
+<link rel="icon" href="./icon-192.png" />
+<link rel="apple-touch-icon" href="./icon-192.png" />
+  <script type="module" crossorigin src="./assets/index-BR0BI18C.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DbtmoF4p.css">
+</head>
+<body>
+<div id="game"></div>
+<div id="ui">
+  <div id="loading" class="screen carbon"><img src="./logo-title.jpg" class="logo" alt="GCVC United" /><div class="bar"><i id="loadBar"></i></div><div class="tip">Warming up…</div></div>
+
+  <div id="hud" class="hidden">
+    <div id="score">
+      <div class="team home"><span class="nm">GCVC</span><b id="sHome">0</b><i id="svHome" class="srv"></i></div>
+      <div class="mid"><span>to 15</span></div>
+      <div class="team away"><i id="svAway" class="srv"></i><b id="sAway">0</b><span class="nm">RIVALS</span></div>
+    </div>
+    <button id="pauseBtn" class="round" aria-label="Pause">II</button>
+    <div id="touches"><i></i><i></i><i></i></div>
+    <div id="meter" class="hidden"><div class="zones"><i class="z-out"></i><i class="z-ace"></i><i class="z-in"></i><i class="z-net"></i></div><div id="meterFill"></div><span>POWER</span></div>
+  </div>
+  <div id="prompt" class="hidden"></div>
+  <div id="pop" class="hidden"></div>
+  <div id="flash"></div>
+
+  <div id="menu" class="screen carbon hidden">
+    <img src="./logo-title.jpg" class="logo" alt="GCVC United" />
+    <div class="sub">3 ON 3 VOLLEYBALL</div>
+    <div class="stats"><div>🪙 <b id="mCoins">0</b></div><div>🏆 <b id="mWins">0</b> wins</div></div>
+    <div class="seg" id="diffSeg"><button data-d="easy">EASY</button><button data-d="medium">MEDIUM</button><button data-d="hard">HARD</button></div>
+    <button id="playBtn" class="big">▶ PLAY MATCH</button>
+    <div class="row"><button id="shopBtn" class="mid">👕 Jerseys</button><button id="howBtn" class="mid">❓ How to play</button></div>
+    <div class="row"><button id="muteBtn" class="small">🔊 Sound</button><button id="gfxBtn" class="small">✨ Auto</button></div>
+  </div>
+
+  <div id="tut" class="screen carbon hidden">
+    <h2>HOW TO PLAY</h2>
+    <div class="cards">
+      <div class="card"><div class="ic">🎯</div><div><b>SERVE</b>Tap to lock your aim, then tap again to set power. Gold zone = tough serve. Too little = net, too much = out.</div></div>
+      <div class="card"><div class="ic">🙌</div><div><b>PASS</b>Your player runs to the ball for you. <u>Tap when the rings meet.</u> Perfect = great pass. Late or early = shank. No tap = miss!</div></div>
+      <div class="card"><div class="ic">🤲</div><div><b>SET</b>Anyone can set. <u>Tap</u> = front set. <u>Swipe ⬅ or ➡</u> = set that way: behind you is a <i>back set</i>, the far side is a set <i>across</i>.</div></div>
+      <div class="card"><div class="ic">💥</div><div><b>SPIKE</b>Your hitter jumps. <u>Swipe ⬆ when the rings meet</u> at the top. Tilt the swipe ⬅ ➡ to aim. Longer swipe = deeper. Tap = soft tip.</div></div>
+      <div class="card"><div class="ic">✋</div><div><b>BLOCK</b>When they spike, <u>tap</u> to jump at the net. Time it with their swing!</div></div>
+    </div>
+    <button id="tutGo" class="big">LET'S PLAY</button>
+  </div>
+
+  <div id="pause" class="screen carbon hidden">
+    <h2>PAUSED</h2>
+    <button id="resumeBtn" class="big">▶ Resume</button>
+    <button id="pHowBtn" class="mid">❓ How to play</button>
+    <button id="quitBtn" class="mid">🏠 Quit match</button>
+  </div>
+
+  <div id="over" class="screen carbon hidden">
+    <h2 id="overTitle">VICTORY!</h2>
+    <div class="final"><div><span>GCVC</span><b id="oHome">15</b></div><em>–</em><div><span>RIVALS</span><b id="oAway">10</b></div></div>
+    <div class="earn">+<b id="oCoins">0</b> 🪙 <small>(total <span id="oTotal">0</span>)</small></div>
+    <div id="oStats" class="ostats"></div>
+    <button id="againBtn" class="big">↻ Rematch</button>
+    <div class="row"><button id="oShopBtn" class="mid">👕 Jerseys</button><button id="homeBtn" class="mid">🏠 Home</button></div>
+  </div>
+
+  <div id="shop" class="screen carbon hidden">
+    <h2>TEAM JERSEYS</h2>
+    <div class="stats"><div>🪙 <b id="shCoins">0</b></div></div>
+    <div id="kits"></div>
+    <button id="shopBack" class="mid">⬅ Back</button>
+  </div>
+</div>
+</body>
+</html>
